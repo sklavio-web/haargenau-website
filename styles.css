@@ -51,12 +51,13 @@ img { display: block; max-width: 100%; }
   gap: .9rem;
 }
 
-.brand-dot {
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: linear-gradient(180deg, var(--gold) 0%, var(--gold-deep) 100%);
-  box-shadow: 0 0 0 6px rgba(207,164,108,.16);
+.brand-logo {
+  width: 116px;
+  height: 44px;
+  object-fit: contain;
+  background: white;
+  padding: .2rem;
+  box-shadow: 0 10px 30px rgba(18,11,8,.08);
 }
 
 .brand-name {
