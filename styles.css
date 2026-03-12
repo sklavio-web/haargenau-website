@@ -332,6 +332,27 @@ h3 { font-size: 1.7rem; }
   margin-top: 1rem;
 }
 
+.legal-section {
+  padding: 2rem 0 6rem;
+}
+
+.legal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.legal-box {
+  background: var(--paper);
+  padding: 2rem;
+  box-shadow: 0 16px 40px rgba(66,44,32,.08);
+  border: 1px solid rgba(44,34,31,.06);
+}
+
+.legal-box h2 {
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+}
+
 @media (max-width: 980px) {
   .hero-grid,
   .statement-grid,
@@ -339,7 +360,8 @@ h3 { font-size: 1.7rem; }
   .salon-grid,
   .contact-grid,
   .services-grid,
-  .trust-row {
+  .trust-row,
+  .legal-grid {
     grid-template-columns: 1fr;
   }
 
