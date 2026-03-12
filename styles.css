@@ -365,13 +365,53 @@ h3 { font-size: 1.7rem; }
     grid-template-columns: 1fr;
   }
 
-  .gallery-item.tall { grid-row: auto; min-height: 520px; }
-  .gallery-item.wide { min-height: 300px; }
+  .hero {
+    padding: 1.25rem 0 3rem;
+  }
+
+  .hero-left {
+    order: 2;
+  }
+
+  .hero-right {
+    order: 1;
+  }
+
+  .hero-grid {
+    gap: 1.5rem;
+  }
+
+  .hero-main-image {
+    aspect-ratio: 4 / 4.4;
+    object-position: center 18%;
+    border-radius: 18px;
+  }
+
   .floating-card {
     position: static;
     width: 100%;
     margin-top: 1rem;
+    padding: 1.15rem;
   }
+
+  .floating-card h2 {
+    font-size: 1.55rem;
+  }
+
+  .hero-copy {
+    font-size: .98rem;
+  }
+
+  .hero-actions {
+    gap: .75rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .gallery-item.tall { grid-row: auto; min-height: 420px; }
+  .gallery-item.wide { min-height: 240px; }
 
   .topbar-inner {
     flex-direction: column;
@@ -384,5 +424,12 @@ h3 { font-size: 1.7rem; }
     gap: .9rem 1.1rem;
   }
 
-  h1 { max-width: 10ch; }
+  h1 {
+    max-width: 10ch;
+    font-size: clamp(2.5rem, 11vw, 3.6rem);
+  }
+
+  h2 {
+    font-size: clamp(1.8rem, 8vw, 2.6rem);
+  }
 }
